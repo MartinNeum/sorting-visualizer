@@ -5,6 +5,7 @@
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css"  type="text/css">
     <script src="newArrayButton.js" type="text/javascript"></script>
+    <script src="sort_buttons.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -17,10 +18,10 @@
       <span class="free_space"></span>
 
       <span class="sort_buttons_nav">
-        <button id="merge_button">Merge Sort</button>
-        <button id="quick_button">Quick Sort</button>
-        <button id="heap_button">Heap Sort</button>
-        <button id="bubble_button">Bubble Sort</button>
+        <button id="merge_button" onclick="mergeSort(document.getElementsByClassName('box_container'))">Merge Sort</button>
+        <button id="quick_button" onclick="quickSort(document.getElementsByClassName('box_container'))">Quick Sort</button>
+        <button id="heap_button" onclick="heapSort(document.getElementsByClassName('box_container'))">Heap Sort</button>
+        <button id="bubble_button" onclick="bubbleSort(document.getElementsByClassName('box_container'))">Bubble Sort</button>
 
         <button id="newArray_button" onclick="createNewArray()">New Array</button>
 
