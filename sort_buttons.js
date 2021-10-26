@@ -10,11 +10,6 @@ function mergeSort(box_containers) {
 
 function quickSort(box_containers) {
     console.log("Quick Sort");
-
-    for (let i = 0; i<10; i++) {
-        console.log(box_containers[i].textContent + ", " + box_containers[i+1].textContent);
-        console.log(Number(box_containers[i].textContent) > Number(box_containers[i+1].textContent));
-    }
 }
 
 function heapSort(box_containers) {
@@ -29,6 +24,8 @@ function bubbleSort(box_containers) {
         swapped = false;
 
         for (let i = 0; i < length; i++) {
+            box_containers[i].style.backgroundColor = "red";
+
             if(Number(box_containers[i].textContent) > Number(box_containers[i+1].textContent)) {
                 // Swapp, if value of next box is smaller
                 let old = Number(box_containers[i].textContent);
