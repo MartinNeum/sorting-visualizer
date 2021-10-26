@@ -11,9 +11,9 @@ function createNewArray() {
 
 function deleteArray() {
     const boxCollection = document.getElementsByClassName("box_container");
-    let laenge = boxCollection.length;
+    let length = boxCollection.length;
 
-    for (let i = 0; i < laenge; i++) {
+    for (let i = 0; i < length; i++) {
         boxCollection[0].parentNode.removeChild(boxCollection[0]);
     }
 }
