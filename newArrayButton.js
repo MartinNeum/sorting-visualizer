@@ -1,6 +1,5 @@
 function createNewArray() {
-    // Delete old Array
-    deleteArray();
+    deleteArray(); // Delete old Array
 
     // Create Array with 10 Boxes with random number from 0 - 10
     for(let i=0; i<10; i++) {
