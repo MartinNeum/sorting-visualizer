@@ -25,6 +25,8 @@ function mergeSort(box_containers) {
         // Recursive merge until all boxes are sorted and merged together
         merge(left, right);
     }
+
+    applyStyle(box_containers);
 }
 
 function merge(left, right) {
@@ -103,4 +105,12 @@ function bubbleSort(box_containers) {
             }
         }
     } while(swapped);
+
+    applyStyle(box_containers);
+}
+
+function applyStyle(array) {
+    for (let i = 0; i < array.length; i++) {
+        array[i].style.fontSize = 'xxx-large';
+    }
 }
