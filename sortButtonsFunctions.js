@@ -1,18 +1,10 @@
-
-
 function quickSort(box_containers) {
     console.log("Quick Sort");
-
 }
 
 function heapSort(box_containers) {
     console.log("Heap Sort");
 }
-
-
-
-
-
 
 function applyStyle(array) {
     for (let i = 0; i < array.length; i++) {
