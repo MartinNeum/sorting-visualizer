@@ -8,6 +8,12 @@ function mergeSort(box_containers) {
         const left = [];
         const right = [];
 
+        for (let i = 0; i < box_containers.length; i++) {
+            box_containers[i].style.backgroundColor = 'green';
+        }
+        sleep(500);
+
+
         // Save 'left' boxes
         for (let i = 0; i < middle; i++) {
             left.push(box_containers[i]);
@@ -76,41 +82,4 @@ function insertHigherValueOnCorrectPosition(pointerLeft, pointerRight, left, rig
         left[i].textContent = Number(left[i-1].textContent);
     }
     left[pointerLeft].textContent = move_value;
-}
-
-function quickSort(box_containers) {
-    console.log("Quick Sort");
-
-}
-
-function heapSort(box_containers) {
-    console.log("Heap Sort");
-}
-
-function bubbleSort(box_containers) {
-    let length = box_containers.length - 1;
-    let swapped;
-
-    do {
-        swapped = false; // Repeat algorithm while boxes were swapped at least once
-
-        for (let i = 0; i < length; i++) {
-            if(Number(box_containers[i].textContent) > Number(box_containers[i+1].textContent)) {
-                // Swapp, if value of next box is smaller
-                let old = Number(box_containers[i].textContent);
-
-                box_containers[i].textContent = Number(box_containers[i+1].textContent);
-                box_containers[i+1].textContent = old;
-                swapped = true;
-            }
-        }
-    } while(swapped);
-
-    applyStyle(box_containers);
-}
-
-function applyStyle(array) {
-    for (let i = 0; i < array.length; i++) {
-        array[i].style.fontSize = 'xxx-large';
-    }
 }
