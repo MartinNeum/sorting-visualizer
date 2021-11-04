@@ -78,7 +78,7 @@ button:active {
 }
 
 .box_container_text{
-  #font-size: xxx-large;
+  font-size: xxx-large;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
