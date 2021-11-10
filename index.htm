@@ -3,10 +3,10 @@
 
   <head>
     <title>Sorting Visualizer</title>
-    <link rel="stylesheet" href="style.css"  type="text/css">
+    <link id="websiteStyle" rel="stylesheet" href="style.css"  type="text/css">
+
     <script src="newArrayButton.js" type="text/javascript"></script>
     <script src="sortButtonsFunctions.js" type="text/javascript"></script>
-
     <script src="mergeSortButton.js" type="text/javascript"></script>
     <script src="bubbleSortButton.js" type="text/javascript"></script>
   </head>
@@ -25,9 +25,7 @@
         <button id="quick_button" onclick="quickSort(document.getElementsByClassName('box_container'))">Quick Sort</button>
         <button id="heap_button" onclick="heapSort(document.getElementsByClassName('box_container'))">Heap Sort</button>
         <button id="bubble_button" onclick="bubbleSort(document.getElementsByClassName('box_container'))">Bubble Sort</button>
-
         <button id="newArray_button" onclick="createNewArray()">New Array</button>
-
       </span>
 
     </header>
