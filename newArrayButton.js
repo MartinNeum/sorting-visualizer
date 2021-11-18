@@ -16,3 +16,11 @@ function deleteArray() {
         boxCollection[0].parentNode.removeChild(boxCollection[0]);
     }
 }
+
+function sleep(ms) {
+    return new Promise((accept) => {
+        setTimeout(() => {
+            accept();
+        }, ms);
+    })
+}
