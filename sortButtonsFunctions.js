@@ -12,6 +12,10 @@ function applyStyle(array) {
     }
 }
 
+function applyStyle(box) {
+    box.style.fontSize = 'xxx-large';
+}
+
 function sleep(ms) {
     return new Promise((accept) => {
         setTimeout(() => {
@@ -22,6 +26,7 @@ function sleep(ms) {
 
 function turnBoxRed(box) {
     box.style.backgroundColor = 'red';
+    applyStyle(box);
 }
 
 function turnBoxOrange(box) {

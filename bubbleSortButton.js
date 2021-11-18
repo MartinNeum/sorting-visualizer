@@ -20,8 +20,7 @@ async function bubbleSort(box_containers) {
 
             turnBoxRed(box1); //Visual Effect: Color boxes and wait
             turnBoxRed(box2);
-            applyStyle(box_containers)
-            await sleep(250);
+            await sleep(200);
 
             if(Number(box_containers[i].textContent) > Number(box_containers[i+1].textContent)) {
                 let old = Number(box_containers[i].textContent);
@@ -32,8 +31,7 @@ async function bubbleSort(box_containers) {
 
             turnBoxOrange(box1); //Visual Effect: Color boxes and wait
             turnBoxOrange(box2);
-            applyStyle(box_containers);
-            await sleep(250);
+            await sleep(200);
 
         }
     } while(swapped);
