@@ -1,4 +1,4 @@
-function bubbleSort(box_containers) {
+async function bubbleSort(box_containers) {
     /**
      * Starts the Bubble-Sort Algorithm. Starting from the right side, two boxes are compared by their value.
      * If the right box.value is higher than the left box.value, the boxes switch position, and 'swapped' gets
@@ -14,14 +14,27 @@ function bubbleSort(box_containers) {
         swapped = false;
 
         for (let i = 0; i < length; i++) {
+
+            const box1 = box_containers[i];
+            const box2 = box_containers[i+1];
+
+            turnBoxRed(box1); //Visual Effect: Color boxes and wait
+            turnBoxRed(box2);
+            applyStyle(box_containers)
+            await sleep(250);
+
             if(Number(box_containers[i].textContent) > Number(box_containers[i+1].textContent)) {
                 let old = Number(box_containers[i].textContent);
                 box_containers[i].textContent = Number(box_containers[i+1].textContent);
                 box_containers[i+1].textContent = old;
                 swapped = true;
             }
+
+            turnBoxOrange(box1); //Visual Effect: Color boxes and wait
+            turnBoxOrange(box2);
+            applyStyle(box_containers);
+            await sleep(250);
+
         }
     } while(swapped);
-
-    applyStyle(box_containers);
 }
