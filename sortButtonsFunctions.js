@@ -12,10 +12,18 @@ function applyStyle(array) {
     }
 }
 
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-        currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
+function sleep(ms) {
+    return new Promise((accept) => {
+        setTimeout(() => {
+            accept();
+        }, ms);
+    })
+}
+
+function turnBoxRed(box) {
+    box.style.backgroundColor = 'red';
+}
+
+function turnBoxOrange(box) {
+    box.style.backgroundColor = 'orange';
 }
