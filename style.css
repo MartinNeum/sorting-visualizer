@@ -73,12 +73,13 @@ button:active {
   width: 100px;
   height: 100px;
 
+  font-size: xxx-large;
   text-align: center;
   line-height: 100px;
 }
 
 .box_container_text{
-  font-size: xxx-large;
+  /*font-size: xxx-large;*/
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
