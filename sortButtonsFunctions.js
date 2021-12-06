@@ -12,7 +12,7 @@ function applyStyle(array) {
     }
 }
 
-function applyStyle(box) {
+function applyBoxStyle(box) {
     box.style.fontSize = 'xxx-large';
 }
 
@@ -31,4 +31,25 @@ function turnBoxRed(box) {
 
 function turnBoxOrange(box) {
     box.style.backgroundColor = 'orange';
+}
+
+function turnBoxGreen(box) {
+    box.style.backgroundColor = 'green';
+}
+
+function turnBoxGrey(box) {
+    box.style.backgroundColor = 'grey';
+}
+
+function turnBoxesRed(box_array) {
+    for (let i = 0; i < box_array.length; i++) {
+        box.style.backgroundColor = 'red';
+        applyStyle(box);
+    }
+}
+
+function turnBoxesOrange(box_array) {
+    for (let i = 0; i < box_array.length; i++) {
+        box.style.backgroundColor = 'orange';
+    }
 }
