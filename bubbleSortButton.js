@@ -27,6 +27,7 @@ async function bubbleSort(box_containers) {
                 box_containers[i].textContent = Number(box_containers[i+1].textContent);
                 box_containers[i+1].textContent = old;
                 swapped = true;
+                applyStyle(box_containers);
             }
 
             turnBoxOrange(box1); //Visual Effect: Color boxes and wait
